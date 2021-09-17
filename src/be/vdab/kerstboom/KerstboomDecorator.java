@@ -1,9 +1,9 @@
 package be.vdab.kerstboom;
 
-abstract class KerstboomDecorator implements Informatie {
-    protected final Informatie gedecoreerdeKerstboom;
+abstract class KerstboomDecorator implements Kerstboom {
+    protected final Kerstboom gedecoreerdeKerstboom;
 
-    public KerstboomDecorator(Informatie gedecoreerdeKerstboom) {
+    public KerstboomDecorator(Kerstboom gedecoreerdeKerstboom) {
         this.gedecoreerdeKerstboom = gedecoreerdeKerstboom;
     }
 }

@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Peloton implements Strijdbaar {
     private final int nummer;
-    private List<Soldaat> soldaten = new ArrayList<>();
+    private final List<Soldaat> soldaten = new ArrayList<>();
 
     public Peloton(int nummer) {
         this.nummer = nummer;
@@ -18,6 +18,6 @@ public class Peloton implements Strijdbaar {
     @Override
     public void trekTenStrijde() {
         System.out.println("\t\t\t\tPeloton " + nummer + " trekt ten strijde met volgende soldaten:");
-        soldaten.forEach(soldaat -> soldaat.trekTenStrijde());
+        soldaten.forEach(Soldaat::trekTenStrijde);
     }
 }

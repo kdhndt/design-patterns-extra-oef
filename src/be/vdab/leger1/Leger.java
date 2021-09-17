@@ -16,8 +16,6 @@ public class Leger {
     }
 
     public boolean isTenStrijde() {
-
-
         return tenStrijde;
     }
 

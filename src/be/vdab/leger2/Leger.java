@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Leger implements Strijdbaar {
-    private List<Bataljon> bataljons = new ArrayList<>();
+    private final List<Bataljon> bataljons = new ArrayList<>();
 
     void add(Bataljon bataljon) {
         bataljons.add(bataljon);
@@ -14,6 +14,6 @@ public class Leger implements Strijdbaar {
     @Override
     public void trekTenStrijde() {
         System.out.println("\tHet leger trekt ten strijde met volgende bataljons:");
-        bataljons.forEach(bataljon -> bataljon.trekTenStrijde());
+        bataljons.forEach(Bataljon::trekTenStrijde);
     }
 }

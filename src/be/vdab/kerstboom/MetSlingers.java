@@ -1,7 +1,7 @@
 package be.vdab.kerstboom;
 
 public class MetSlingers extends KerstboomDecorator {
-    public MetSlingers(Informatie gedecoreerdeKerstboom) {
+    public MetSlingers(Kerstboom gedecoreerdeKerstboom) {
         super(gedecoreerdeKerstboom);
     }
 
